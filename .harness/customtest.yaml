@@ -3,7 +3,8 @@ pipeline:
   identifier: customtest1
   projectIdentifier: CDrepro
   orgIdentifier: default
-  tags: {}
+  tags:
+    <+pipeline.name>: ""
   stages:
     - stage:
         name: test
