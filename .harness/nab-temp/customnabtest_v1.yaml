@@ -36,3 +36,7 @@ template:
         type: String
         description: ""
         value: <+input>
+      - name: second
+        type: String
+        description: ""
+        value: second-value
