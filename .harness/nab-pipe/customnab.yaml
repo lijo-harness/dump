@@ -1,0 +1,14 @@
+pipeline:
+  name: custom-nab
+  identifier: customnab
+  template:
+    templateRef: customnabtest
+    versionLabel: v1
+    templateInputs:
+      variables:
+        - name: test_var
+          type: String
+          value: <+input>
+  tags: {}
+  projectIdentifier: CDrepro
+  orgIdentifier: default
