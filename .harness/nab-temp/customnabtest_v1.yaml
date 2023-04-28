@@ -1,0 +1,38 @@
+template:
+  name: custom-nab-test
+  identifier: customnabtest
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: CDrepro
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: test2
+          identifier: test2
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: ShellScript
+                    name: ShellScript_1
+                    identifier: ShellScript_1
+                    spec:
+                      shell: Bash
+                      onDelegate: true
+                      source:
+                        type: Inline
+                        spec:
+                          script: pwd
+                      environmentVariables: []
+                      outputVariables: []
+                    timeout: 10m
+          tags: {}
+    variables:
+      - name: test_var
+        type: String
+        description: ""
+        value: <+input>
