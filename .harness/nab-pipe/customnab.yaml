@@ -12,3 +12,4 @@ pipeline:
   tags: {}
   projectIdentifier: CDrepro
   orgIdentifier: default
+  description: custom branch
