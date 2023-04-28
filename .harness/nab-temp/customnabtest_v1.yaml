@@ -39,4 +39,4 @@ template:
       - name: second
         type: String
         description: ""
-        value: second-value
+        value: <+input>
