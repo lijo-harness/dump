@@ -8,7 +8,10 @@ pipeline:
       variables:
         - name: test_var
           type: String
-          value: <+input>
+          value: ""
+        - name: second
+          type: String
+          value: ""
   tags: {}
   projectIdentifier: CDrepro
   orgIdentifier: default
