@@ -35,4 +35,4 @@ template:
       - name: test_var
         type: String
         description: ""
-        value: "test-value"
+        value: <+input>
