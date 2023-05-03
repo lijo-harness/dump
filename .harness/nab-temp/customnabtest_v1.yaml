@@ -29,7 +29,7 @@ template:
                           script: pwd
                       environmentVariables: []
                       outputVariables: []
-                    timeout: 10m
+                    timeout: <+input>.allowedValues(20m)
           tags: {}
     variables:
       - name: test_var
