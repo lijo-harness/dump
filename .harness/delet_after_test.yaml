@@ -1,0 +1,13 @@
+pipeline:
+  name: delet_after_test
+  identifier: delet_after_test
+  projectIdentifier: CIrepro
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test1
+        identifier: test1
+        template:
+          templateRef: delet_after_test
+          versionLabel: v1
